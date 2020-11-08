@@ -1,0 +1,194 @@
+/* Navbar */
+.navbar, .jumbotron .container {
+    position: relative;
+    z-index: 1  ;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .display-4 {
+    color: #fff;
+    margin-top: 150px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    margin-top: -100px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 5px;    
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #ACACAC;
+    mask-type: -5px;
+}
+
+/* Working Space */
+
+.workingspace {
+    margin-top: 120px;
+}
+
+.workingspace h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.workingspace span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+/* Testimonial */
+
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.testimonial figure img {
+    width: 60px;
+    margin: 20px 10px 10px;
+    opacity: .6;
+}
+
+.testimonial figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1C2C5D;    
+}
+
+.testimonial figure p {
+    font-size: 12px;
+    color: #ACACAC;
+    text-align: center; 
+    margin-top: -5px;  
+}
+
+.testimonial figure img.aktif {
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+
+/* footer */
+.footer p {
+    color: #ACACAC;
+    font-size: 18px;
+    margin-top: 100px;
+}
+/* Utility */
+
+.tombol {
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) { 
+
+    .navbar .nav-link, .navbar-brand{
+        color : #fff !important;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.6);   
+    }
+    .nav-link { 
+        text-transform: uppercase;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+    margin-top: -75px;
+    height: 640;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace h3 {
+    text-align: left;
+    }
+
+    .testimonial h5 {
+    font-size: 32px;
+   
+}
+
+
+}
